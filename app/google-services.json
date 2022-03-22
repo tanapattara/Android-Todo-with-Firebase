@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "982639147179",
+    "firebase_url": "https://kotlin-todo-63152-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kotlin-todo-63152",
+    "storage_bucket": "kotlin-todo-63152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982639147179:android:071a36c07f453711749fee",
+        "android_client_info": {
+          "package_name": "th.ac.kku.cis.todoapplcationwithfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982639147179-g4uvljlo7h1s9h4tqa6kqmoielai6u2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.ac.kku.cis.todoapplcationwithfirebase",
+            "certificate_hash": "380eaa8cf3ea9c25c37bafc7a6980b9437e79604"
+          }
+        },
+        {
+          "client_id": "982639147179-8pq4lekgrt4fb1og8sf3ki6mon0bjrb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN-KO2-fAHTz_p15t-gZ22teKcgPKSey0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982639147179-8pq4lekgrt4fb1og8sf3ki6mon0bjrb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
