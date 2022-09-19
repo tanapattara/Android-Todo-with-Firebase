@@ -85,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
         if (user != null) {
             Log.d(TAG, "Signed in as " + user.email)
             startActivity(Intent(this, MainActivity::class.java))
-            finish()
+            //finish()
         }else{
             Log.d(TAG, "None user sign-in")
         }

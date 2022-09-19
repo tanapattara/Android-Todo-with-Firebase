@@ -4,11 +4,14 @@ import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.ListView
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class MainActivity : AppCompatActivity(), ItemRowListener {
@@ -126,6 +129,22 @@ class MainActivity : AppCompatActivity(), ItemRowListener {
 
         toDoItemList!!.removeAt(index)
         adapter.notifyDataSetChanged()
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here.
+        when (item.getItemId()) {
+            R.id.logout -> {
+                FirebaseAuth.getInstance().signOut();
+                finish()
+            }
+            R.id.user_profile -> {}
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }
